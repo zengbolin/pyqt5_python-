@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>520</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>520</width>
+    <height>350</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>520</width>
+    <height>350</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>添加账号</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../images/login.qrc">
+    <normaloff>:/login/QQ.png</normaloff>:/login/QQ.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#Form{
+	
+	
+	border-image: url(:/login/登录图片.png);
+}</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>230</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>150</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>150</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(244, 244, 244) ;
+font: 75 9pt &quot;微软雅黑&quot;;
+border-radius:6px;
+
+</string>
+   </property>
+   <property name="text">
+    <string> 注册QQ账号</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../images/login.qrc">
+     <normaloff>:/login/添加好友.png</normaloff>:/login/添加好友.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>310</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/login/QQ.png);
+background-color:transparent ;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>310</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent ;
+image: url(:/login/二维码.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="login_btn_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>290</y>
+     <width>230</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>230</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>230</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color:rgb(85, 170, 255);
+	font: 10pt &quot;微软雅黑&quot;;
+	color: rgb(255, 255, 255);
+	border-radius:6px;
+}
+QPushButton:pressed{
+	background-color:rgb(0, 170, 255);
+}
+
+QPushButton:hover{
+	background-color:rgb(25, 225, 255);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>登录</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../images/login.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>exit_register_pane()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>27</x>
+     <y>327</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-26</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>open_register_link()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>228</x>
+     <y>240</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>174</x>
+     <y>420</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>login_btn_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>exit_register_pane()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>179</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-75</x>
+     <y>283</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>show_qrcode_pane()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>488</x>
+     <y>322</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>541</x>
+     <y>317</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>exit_register_pane()</slot>
+  <slot>open_register_link()</slot>
+  <slot>show_qrcode_pane()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,18 @@
+<RCC>
+  <qresource prefix="login">
+    <file>计算器.png</file>
+    <file>下拉.png</file>
+    <file>scan.png</file>
+    <file>QR_code.jpg</file>
+    <file>版图.png</file>
+    <file>QQ.png</file>
+    <file>登录图片.png</file>
+    <file>二维码.png</file>
+    <file>忙碌-im.png</file>
+    <file>添加好友.png</file>
+    <file>隐身.png</file>
+    <file>在线.png</file>
+    <file>1.jpeg</file>
+    <file>file.jpg</file>
+  </qresource>
+</RCC>

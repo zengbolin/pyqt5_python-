@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>520</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>520</width>
+    <height>350</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>520</width>
+    <height>350</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>设置</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../images/login.qrc">
+    <normaloff>:/login/QQ.png</normaloff>:/login/QQ.png</iconset>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>1</y>
+     <width>520</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>520</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>520</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/login/版图.png);</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>31</y>
+     <width>520</width>
+     <height>289</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(235, 242, 249);
+font: 9pt &quot;黑体&quot;;</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;黑体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>网络设置</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>80</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string> 类型：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>120</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>用户名：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>190</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;黑体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>登录服务器</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>230</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>类型:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>71</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 7pt &quot;微软雅黑&quot;;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>不使用代理</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HTTP代理</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SOCKS5代理</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>使用浏览器设置</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>80</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>地址:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>70</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	background-color:rgb(255, 255, 255);
+	border-radius:6px;
+}
+
+QLineEdit:disabled{
+	background-color:rgb(245, 248, 252);
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>80</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>端口：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>70</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	background-color:rgb(255, 255, 255);
+	border-radius:6px;
+}
+
+QLineEdit:disabled{
+	background-color:rgb(245, 248, 252);
+}</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_3">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>110</y>
+      <width>113</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	background-color:rgb(255, 255, 255);
+	border-radius:6px;
+}
+
+QLineEdit:disabled{
+	background-color:rgb(245, 248, 252);
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>120</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>密码:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_4">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>110</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	background-color:rgb(255, 255, 255);
+	border-radius:6px;
+}
+
+QLineEdit:disabled{
+	background-color:rgb(245, 248, 252);
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>120</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>域:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_5">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>110</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	background-color:rgb(255, 255, 255);
+	border-radius:6px;
+}
+
+QLineEdit:disabled{
+	background-color:rgb(245, 248, 252);
+}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>150</y>
+      <width>71</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(240, 245, 250);
+font: 9pt &quot;黑体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>测试</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>221</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 7pt &quot;微软雅黑&quot;;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>不使用高级选项</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>UDP类型</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TCp类型</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>230</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>地址:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_3">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>221</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	background-color:rgb(85, 170, 255);
+	color: rgb(255, 255, 255);
+	border-radius:6px;
+}
+
+QLineEdit:disabled{
+	background-color:rgb(245, 248, 252);
+}</string>
+    </property>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>183.60.48.174</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>sz.tencent.com</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>sz2.tencent.com</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>sz3.tencent.com</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>sz4.tencent.com</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>sz5.tencent.com</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>230</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>端口:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_6">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>220</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	background-color:rgb(255, 255, 255);
+	border-radius:6px;
+}
+
+QLineEdit:disabled{
+	background-color:rgb(245, 248, 252);
+}</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_3" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>320</y>
+     <width>520</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>520</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>520</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(205, 226, 242);</string>
+   </property>
+   <widget class="QDialogButtonBox" name="buttonBox">
+    <property name="geometry">
+     <rect>
+      <x>302</x>
+      <y>0</y>
+      <width>201</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(85, 85, 85);
+background-color: rgb(242, 242, 242);
+font: 9pt &quot;黑体&quot;;
+</string>
+    </property>
+    <property name="standardButtons">
+     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../images/login.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Form</receiver>
+   <slot>show_menu()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>466</x>
+     <y>333</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>879</x>
+     <y>333</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Form</receiver>
+   <slot>show_menu()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>343</x>
+     <y>329</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>551</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>enable_test()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>307</x>
+     <y>113</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>651</x>
+     <y>113</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_2</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>enable_test()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>447</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>532</x>
+     <y>125</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox</sender>
+   <signal>activated(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>enable_test()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>135</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>702</x>
+     <y>53</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_2</sender>
+   <signal>activated(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>enable_pane()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>153</x>
+     <y>263</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>676</x>
+     <y>263</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_3</sender>
+   <signal>activated(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>enable_pane()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>330</x>
+     <y>270</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>555</x>
+     <y>286</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_6</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>enable_pane()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>437</x>
+     <y>263</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>543</x>
+     <y>273</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_3</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>enable_test()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>102</x>
+     <y>156</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-20</x>
+     <y>156</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_4</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>enable_test()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>289</x>
+     <y>154</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>532</x>
+     <y>216</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_5</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>enable_test()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>450</x>
+     <y>157</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>570</x>
+     <y>158</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>enable_test()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>467</x>
+     <y>195</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>600</x>
+     <y>205</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>show_menu()</slot>
+  <slot>enable_test()</slot>
+  <slot>enable_pane()</slot>
+ </slots>
+</ui>
